@@ -1,0 +1,3 @@
+[System.Xml.Xsl.XslCompiledTransform] $xslt = New-Object System.Xml.Xsl.XslCompiledTransform
+$xslt.Load("C:\Users\Yogha\OneDrive\Documents\XML\test.xsl")
+$xslt.Transform("C:\Users\Yogha\OneDrive\Documents\XML\test.xml", "C:\Users\Yogha\OneDrive\Documents\XML\test.html")

@@ -1,0 +1,25 @@
+<HTML>
+<form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <!-- Add other form fields as needed -->
+    <button type="button" onclick="validateForm()">Submit</button>
+  </form>
+  
+  <script>
+    function validateForm() {
+      const name = document.getElementById('name').value;
+      // Perform validation for other fields
+  
+      if (name === "") {
+        alert("Name cannot be empty!");
+        return;
+      }
+  
+      // Add other validation checks
+  
+      alert("Form submitted successfully!");
+    }
+    document.write("Script is enabled!");
+  </script>
+</HTML>

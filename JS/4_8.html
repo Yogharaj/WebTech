@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Form</title>
+</head>
+<body>
+
+  <script>
+    // Create form dynamically
+    const form = document.createElement('form');
+    form.id = 'dynamicForm';
+
+    // Create input element
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.name = 'dynamicInput';
+    input.placeholder = 'Enter something...';
+
+    // Create submit button
+    const submitButton = document.createElement('button');
+    submitButton.type = 'submit';
+    submitButton.innerText = 'Submit';
+
+    // Append input and button to the form
+    form.appendChild(input);
+    form.appendChild(submitButton);
+
+    // Append the form to the body
+    document.body.appendChild(form);
+
+    // Add form submission event
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      const inputValue = input.value;
+      alert('Submitted: ' + inputValue);
+    });
+  </script>
+</body>
+</html>
